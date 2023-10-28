@@ -6,7 +6,7 @@
 // console.log("2" > 0); // ">" operator convert the string into number. so that is why O/P will be true.
 // console.log("2" < 0); // ">" operator convert the string into number. so that is why O/P will be false.
 // console.log(null == 0); // "==" equality check operator does not convert null in number so that is why it will print false 
-// console.log(null === 0); // "===" equality check operator does not convert null in number so that is why it will print false 
+// console.log(null === 0); // "===" strict equality check operator; null and 0 have different data types, so that is why it will be false
 // console.log(null > 0); // greater than ">" operator convert null into number and treat it as zero [0]. So that is why it prints false.
 // console.log(null >= 0); // greater than or equal to ">="  operator convert null into number and treat it as zero [0]. So that is why it prints true.
 // console.log(null < 0); // Less than "<" operator convert null into number and treat it as zero [0]. So that is why it prints false.
