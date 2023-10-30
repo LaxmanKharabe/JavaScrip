@@ -6,3 +6,8 @@ let accountState; //undefined
 
 console.table([accountId, accountEmail, accountPass, accountCity]);
 console.log(accountState);
+
+
+
+
+
