@@ -43,3 +43,6 @@ const string3 = "letters";
 const str = "Hello, World!";
 console.log(str.charCodeAt(2));
 
+/* concat():
+    
+*/
