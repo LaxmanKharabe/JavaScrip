@@ -52,4 +52,37 @@ function add(a, b) {
 console.log(add(5,6));
   
 
+/* 
+Stack (Primitive) || Heap (Non-Primitive)
++ Primitive data types uses stack memory & Non-Primitive data types uses Heap memory.
+*/
+
+// Primitive data type (number)
+let a = 5;
+let b = a; // Copy the value of 'a'
+b = 10; // 'a' remains 5, 'b' is 10
+console.log(a)
+console.log(b)
+
+// Create an object named obj1 with two properties, myName and age.
+const obj1 = {
+  myName: "Laxman",
+  age: 25
+};
+
+// Create a new variable named obj2 and assign it the reference to obj1.
+const obj2 = obj1;
+
+// Modify the myName property of obj2 to "Amol".
+obj2.myName = "Amol";
+
+// Since obj2 references the same object as obj1, the change made to obj2 affects obj1.
+// So, both obj1 and obj2 will have the updated myName property.
+console.log(obj1.myName); // Output: "Amol"
+console.log(obj2.myName); // Output: "Amol"
+
+
+
+
+
 
