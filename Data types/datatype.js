@@ -86,3 +86,6 @@ console.log(obj2.myName); // Output: "Amol"
 
 
 
+
+
+
