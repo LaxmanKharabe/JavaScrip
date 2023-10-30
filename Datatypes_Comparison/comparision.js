@@ -17,3 +17,6 @@
 // console.log(undefined > 0); // false
 console.log("2" > false); // "2" will be convertred into common data type 2 will be number and false is equal to 0; so O/P will be true.
 console.log("0" < true); //"0" will br convertred into common data type; 0 will be number and true is equal to 1; so O/P will be true.
+
+
+
