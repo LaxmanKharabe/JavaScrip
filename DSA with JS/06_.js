@@ -1,16 +1,28 @@
-function intToRoman(num) {
-    if (num <= 0 || num > 50) {
-        return "Invalid input. Please enter a number between 1 and 9.";
+// Write a code for converting an integer number to roman number
+function integerToRoman(num) {
+    if (num <= 0 || num > 10) {
+        return "Invalid number. Please enter a number between 1 and 10.";
     }
-
     const romanNumerals = [
-        ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X",]
+        { numValue: 10, numeral: "X" },
+        { numValue: 9, numeral: "IX" },
+        { numValue: 5, numeral: "V" },
+        { numValue: 4, numeral: "IV" },
+        { numValue: 1, numeral: "I" }
     ];
+    let result = "";
 
-    return romanNumerals[0][num];
+    for (let pos=0; pos<romanNumerals.length; ++pos){
+        while(num>=romanNumerals[pos].numValue){
+            result += romanNumerals[pos].numeral;
+            num -= romanNumerals[pos].numValue;
+        }
+    }
+    
+
+    return result;
 }
 
-// Example usage:
-console.log(intToRoman(15)); // Output: I
-console.log(intToRoman(5)); // Output: V
-console.log(intToRoman(10)); // Output: IX
+const number = 10;
+const romanNumber = integerToRoman(number);
+console.log(`The Roman numeral for ${number} is: ${romanNumber}`);
