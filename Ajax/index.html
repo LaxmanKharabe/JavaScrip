@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">AJAX Tutorial</a>
+    </nav>
+
+    <!-- Buttons Section -->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col text-center">
+                <button class="btn btn-primary" id="text-btn" onclick="onTextBtnClick()">Text Data</button>
+                <button class="btn btn-success" id="json-btn" onclick="onJSOnBtnClick()">JSON Data</button>
+                <button class="btn btn-warning" id="api-btn" onclick="onAPIBtnClick()">API Data</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Data Section -->
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Text Data</h3>
+                    </div>
+                    <div class="card-body" id="text-card">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>JSON Data</h3>
+                    </div>
+                    <div class="card-body" id="json-card">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>API Data</h3>
+                    </div>
+                    <div class="card-body" id="api-card">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
