@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    background-color: #2f323a;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    padding: 30px 0;
+}
+.companyLogo{
+    width: 100%;
+    height: 200px;
+}
+.logo {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.menu {
+    margin-top: 30px;
+}
+
+.item {
+    display: block;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.item:hover {
+    background-color: #3c3e45;
+}
+
+.sign-out {
+    display: block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sign-out:hover {
+    background-color: #3c3e45;
+}
