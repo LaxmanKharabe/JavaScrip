@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegEx</title>
+</head>
+<body>
+    <form>
+        <label for="emailBoxLabel">Email:</label>
+        <input type="email" id="emailBoxLabel" title="emailBox" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+        
+        <label for="textBox">Text:</label>
+        <input type="text" id="textBox" title="textBox" pattern="[a-z]{3}" required>
+        
+        <p id="demo"></p>
+        
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+    
+    <script>
+        const submitForm = () => {
+            const emailBoxValue = document.querySelector('#emailBoxLabel').value;
+            const textBoxValue = document.querySelector('#textBox').value;
+            document.querySelector('#demo').innerHTML = `Email: ${emailBoxValue}, Text: ${textBoxValue}`;
+        };
+    </script>
+    
+</body>
+</html>
